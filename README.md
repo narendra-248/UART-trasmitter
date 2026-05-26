@@ -16,7 +16,7 @@ Set 8 switches to an ASCII byte, press the centre button, and the character appe
 
 Click the image below to watch the UART transmitter running on the Basys3 FPGA board.
 
-[![UART Demo](images/output.png)](videos/Uart Txd.mp4)
+[![UART Demo](images/output.png)](videos/uart_demo.mp4)
 
 
 ## Project Structure
@@ -34,7 +34,7 @@ uart_tx/
 
 ## Hardware
 
-![Basys3 Board](images/basys-3.jpeg)
+![Basys3 Board](images/basys3.jpeg)
 
 | Item | Detail |
 |---|---|
@@ -112,7 +112,6 @@ Two-state FSM (`IDLE` → `SEND` → `IDLE`).
 
 Recommended tools: PuTTY, Tera Term, Arduino Serial Monitor.
 I used Tera Term in my project
-![Tera Term UI](images/Tera_Term.png)
 
 ### 4. Transmit a Character
 1. Set switches `SW[7:0]` to the binary value of your ASCII character.
