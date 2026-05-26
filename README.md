@@ -34,7 +34,7 @@ uart_tx/
 
 ## Hardware
 
-![Basys3 Board](images/basys3.jpeg)
+![Basys3 Board](images/basys3.png)
 
 | Item | Detail |
 |---|---|
