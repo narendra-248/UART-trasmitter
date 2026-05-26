@@ -16,7 +16,7 @@ Set 8 switches to an ASCII byte, press the centre button, and the character appe
 
 Click the image below to watch the UART transmitter running on the Basys3 FPGA board.
 
-[![UART Demo](images/output.png)](videos/uart_demo.mp4)
+[![UART Demo](images/output.png)](https://youtu.be/TGN583rSuzY)
 
 
 ## Project Structure
@@ -34,7 +34,7 @@ uart_tx/
 
 ## Hardware
 
-![Basys3 Board](images/basys3.png)
+![Basys3 Board](images/Basys3.png)
 
 | Item | Detail |
 |---|---|
