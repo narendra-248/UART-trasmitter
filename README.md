@@ -1,9 +1,23 @@
 # UART Transmitter — Basys3 (Artix-7)
 
+![FPGA](https://img.shields.io/badge/FPGA-Basys3-blue)
+![Verilog](https://img.shields.io/badge/Language-Verilog-green)
+![Vivado](https://img.shields.io/badge/Tool-Xilinx%20Vivado-orange)
+![UART](https://img.shields.io/badge/Protocol-UART-red)
+
 A simple 8-bit UART transmitter implemented in Verilog and deployed on the **Digilent Basys3 FPGA board**.  
 Set 8 switches to an ASCII byte, press the centre button, and the character appears in any serial terminal.
 
+![UART Transmitter](images/vivado.png)
+
 ---
+
+## Demo Video
+
+Click the image below to watch the UART transmitter running on the Basys3 FPGA board.
+
+[![UART Demo](images/output.png)](videos/Uart Txd.mp4)
+
 
 ## Project Structure
 
@@ -16,9 +30,15 @@ uart_tx/
 └── README.md
 ```
 
+## Demo Video
+
+[![Watch Demo](images/output.png)](videos/Uart Txd.mp4)
+
 ---
 
 ## Hardware
+
+![Basys3 Board](images/basys-3.jpeg)
 
 | Item | Detail |
 |---|---|
@@ -95,6 +115,8 @@ Two-state FSM (`IDLE` → `SEND` → `IDLE`).
 | Flow control | None |
 
 Recommended tools: PuTTY, Tera Term, Arduino Serial Monitor.
+I used Tera Term in my project
+![Tera Term UI](images/Tera Term.png)
 
 ### 4. Transmit a Character
 1. Set switches `SW[7:0]` to the binary value of your ASCII character.
@@ -107,6 +129,10 @@ Recommended tools: PuTTY, Tera Term, Arduino Serial Monitor.
 SW7 SW6 SW5 SW4 SW3 SW2 SW1 SW0
  0   1   0   0   0   0   0   1
 ```
+
+## Output
+
+![Output](images/output.png)
 
 ---
 
@@ -145,6 +171,13 @@ set_property CONFIG_VOLTAGE 3.3 [current_design]
 | HDL | Verilog (IEEE 1364-2001) |
 
 ---
+
+## Future Improvements
+
+- UART receiver implementation
+- Full duplex UART communication
+- Configurable baud rate generator
+- Hardware testbench automation
 
 ## License
 
