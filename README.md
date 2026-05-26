@@ -30,10 +30,6 @@ uart_tx/
 └── README.md
 ```
 
-## Demo Video
-
-[![Watch Demo](images/output.png)](videos/Uart Txd.mp4)
-
 ---
 
 ## Hardware
@@ -116,7 +112,7 @@ Two-state FSM (`IDLE` → `SEND` → `IDLE`).
 
 Recommended tools: PuTTY, Tera Term, Arduino Serial Monitor.
 I used Tera Term in my project
-![Tera Term UI](images/Tera Term.png)
+![Tera Term UI](images/Tera_Term.png)
 
 ### 4. Transmit a Character
 1. Set switches `SW[7:0]` to the binary value of your ASCII character.
